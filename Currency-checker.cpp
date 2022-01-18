@@ -129,25 +129,22 @@ void pick_currency_today()
         {
             case 1:
                 currency = "eur";
-                json_dump = get_api_query_today(currency);
                 break;
             case 2:
                 currency = "usd";
-                json_dump = get_api_query_today(currency);
                 break;
             case 3:
                 currency = "chf";
-                json_dump = get_api_query_today(currency);
                 break;
             case 4:
                 currency = "gbp";
-                json_dump = get_api_query_today(currency);
                 break;
             default:
                 system("cls");
                 std::cout << "Restart the program.\n";
                 break;
         }
+        json_dump = get_api_query_today(currency);
         print_json_from_api(json_dump);
 
         save_to_file(json_dump);
@@ -178,25 +175,22 @@ void pick_currency_last_busisnes()
         {
             case 1:
                 currency = "eur";
-                json_dump = get_api_query_with_specific_date(currency, time.make_date_to_url());
                 break;
             case 2:
                 currency = "usd";
-                json_dump = get_api_query_with_specific_date(currency, time.make_date_to_url());
                 break;
             case 3:
                 currency = "chf";
-                json_dump = get_api_query_with_specific_date(currency, time.make_date_to_url());
                 break;
             case 4:
                 currency = "gbp";
-                json_dump = get_api_query_with_specific_date(currency, time.make_date_to_url());
                 break;
             default:
                 system("cls");
                 std::cout << "Restart the program.\n";
                 break;
         }
+        json_dump = get_api_query_with_specific_date(currency, time.make_date_to_url());
         print_json_from_api(json_dump);
 
         save_to_file(json_dump);
@@ -255,25 +249,22 @@ void pick_currency_on_specific_day()
         {
             case 1:
                 currency = "eur";
-                json_dump = get_api_query_with_specific_date(currency, time.make_date_to_url());
                 break;
             case 2:
                 currency = "usd";
-                json_dump = get_api_query_with_specific_date(currency, time.make_date_to_url());
                 break;
             case 3:
                 currency = "chf";
-                json_dump = get_api_query_with_specific_date(currency, time.make_date_to_url());
                 break;
             case 4:
                 currency = "gbp";
-                json_dump = get_api_query_with_specific_date(currency, time.make_date_to_url());
                 break;
             default:
                 system("cls");
                 std::cout << "Restart the program.\n";
                 break;
         }
+        json_dump = get_api_query_with_specific_date(currency, time.make_date_to_url());
         print_json_from_api(json_dump);
 
         save_to_file(json_dump);
