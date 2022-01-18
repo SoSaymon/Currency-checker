@@ -1,0 +1,9 @@
+﻿#ifndef _CURRENCY_CHECKER_GUARD
+#define _CURRENCY_CHECKER_GUARD
+#include <iostream>
+#include <cstdlib>
+#include <nlohmann/json.hpp>
+#include "file/file.h"
+#include "date_time/date_time.h"
+#include "web_handler/web_handler.h"
+#endif //!_CURRENCY_CHECKER_GUARD
