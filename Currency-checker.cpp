@@ -23,7 +23,7 @@ int main()
 {
     loading_program();
     std::cout << "Loading program...";
-    Sleep(2500);
+    //Sleep(2500);
     choice();
 
     return 0;
